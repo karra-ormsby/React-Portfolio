@@ -1,24 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 function Header({ currentPage, handlePageChange }) {
     return (
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                {/* <a class="nav-link" href="#about-me">About Me</a> */}
+            <nav className="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+                <div className="container-fluid">
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
                                 <a
                                     href="#about-me"
-                                    onClick={() => handlePageChange('About')}
-                                    className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                                    onClick={() => handlePageChange('About Me')}
+                                    className={currentPage === 'About Me' ? 'nav-link active' : 'nav-link'}
                                 >
                                     About Me
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                {/* <a class="nav-link" href="#portfolio">Portfolio</a> */}
+                            <li className="nav-item">
                                 <a
                                     href="#portfolio"
                                     onClick={() => handlePageChange('Portfolio')}
@@ -27,18 +25,16 @@ function Header({ currentPage, handlePageChange }) {
                                     Portfolio
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                {/* <a class="nav-link" href="#contact-me">Contact Me</a> */}
+                            <li className="nav-item">
                                 <a
                                     href="#contact-me"
-                                    onClick={() => handlePageChange('Contact')}
-                                    className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                                    onClick={() => handlePageChange('Contact Me')}
+                                    className={currentPage === 'Contact Me' ? 'nav-link active' : 'nav-link'}
                                 >
                                     Contact Me
                                 </a>
                             </li>
-                            <li class="nav-item">
-                                {/* <a class="nav-link" href="#resume">Resume</a> */}
+                            <li className="nav-item">
                                 <a
                                     href="#resume"
                                     onClick={() => handlePageChange('Resume')}

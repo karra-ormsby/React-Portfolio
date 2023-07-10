@@ -1,10 +1,15 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
+
 
 function App() {
   return (
-    <Header />
+    <div>
+      <Navigation />
+      <Footer />
+    </div>
   );
 }
 
