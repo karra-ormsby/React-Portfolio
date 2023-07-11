@@ -63,7 +63,7 @@ function Contact() {
     };
 
     return (
-        <div>
+        <section id='contact'>
             <h1>Contact Me</h1>
 
             <div className="mb-3">
@@ -122,7 +122,7 @@ function Contact() {
                 )}
             </div>
 
-        </div>
+        </section>
     );
 }
 
