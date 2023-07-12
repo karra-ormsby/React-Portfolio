@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 
-function Contact() {
+function Contact(props) {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -47,23 +47,29 @@ function Contact() {
     const handleNameBlur = () => {
         if (name.trim() === '') {
             setNameError(true);
+        } else {
+            setNameError(false);
         }
     };
 
     const handleEmailBlur = () => {
         if (name.trim() === '') {
             setEmailError(true);
+        } else {
+            setEmailError(false);
         }
     };
 
     const handleMessagelur = () => {
         if (name.trim() === '') {
             setMessageError(true);
+        } else {
+            setMessageError(false);
         }
     };
 
     return (
-        <section id='contact'>
+        <section id='contact' className={props.clicked ? 'content-active' : 'content'}>
             <h1>Contact Me</h1>
 
             <div className="mb-3">
@@ -100,19 +106,28 @@ function Contact() {
                     />
                     <button type="button" onClick={handleFormSubmit}>Submit</button>
                 </form>
-                {nameError && (
+                {nameError ? (
                     <div>
                         <p>Name is required!</p>
                     </div>
+                ) : (
+                    <div>
+                    </div>
                 )}
-                {emailError && (
+                {emailError ? (
                     <div>
                         <p>Email is required!</p>
                     </div>
+                ) : (
+                    <div>
+                    </div>
                 )}
-                {messgaeError && (
+                {messgaeError ? (
                     <div>
                         <p>Message is required!</p>
+                    </div>
+                ) : (
+                    <div>
                     </div>
                 )}
                 {errorMessage && (
