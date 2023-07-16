@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Resume(props) {
+function Resume() {
     return (
-        <section id='my-resume' className={props.clicked ? 'content-active' : 'content'}>
+        <section id='my-resume' >
             <h1>Resume</h1>
             <div id='skills'>
                 <div>
-                    <h4> Hard Skills</h4>
+                    <h3 className='accent'> Hard Skills</h3>
                     <ul>
                         <li>
                             Proficiency in front-end technologies such as HTML, CSS, and JavaScript
@@ -33,7 +33,7 @@ function Resume(props) {
                 </div>
 
                 <div>
-                    <h4>Soft Skills</h4>
+                    <h3 className='accent'>Soft Skills</h3>
                     <ul>
                         <li>
                             Excellent problem-solving and analytical abilities

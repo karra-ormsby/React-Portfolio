@@ -1,5 +1,5 @@
 :root{
-    --accent-color: rgb(70, 70, 255);
+    --accent-color: #2F86CC;
 }
 
 #root {
@@ -8,15 +8,34 @@
     font-family: 'Raleway', sans-serif;
 }
 
+/* -------------------- Multiple Pages -------------------- */
+
+.accent {
+    color: var(--accent-color);
+    font-weight: 700;
+}
+
+#about,
+#contact,
+#my-resume {
+    padding: 2rem 2rem 7rem 2rem;
+    background-color: #212529;
+    height: 100vh;
+    color: white;
+}
+
+button {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+/* -------------------- About Me page -------------------- */
+
 #heading-div {
     display: flex;
     justify-content: space-between;
     align-items: end;
     padding-bottom: 0.5rem;
-}
-
-.content {
-    transition: all 0.5s ease;
 }
 
 #about {
@@ -25,22 +44,17 @@
     display: block;
 }
 
+#about p {
+    padding-top: 1rem;
+}
+
 #avatar {
     transform: scaleX(-1);
     max-width: 50%;
     max-height: auto;
 }
 
-span {
-    color: var(--accent-color)
-}
-
-#about, #contact, #my-resume {
-    padding: 2rem 2rem 7rem 2rem;
-    background-color: #212529;
-    height: 100vh;
-    color: white;
-}
+/* -------------------- Portfolio page -------------------- */
 
 #my-portfolio {
     padding: 2rem 2rem 7rem 2rem;
@@ -84,7 +98,7 @@ span {
     border-radius: 10px;
     transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
     transition: transform 0.3s ease-in-out;
-    max-width: 55%;
+    max-width: 100%;
     max-height: auto;
     margin-bottom: 10rem;
     margin-right: 5rem;
@@ -112,6 +126,8 @@ span {
     color: black;
 }
 
+/* -------------------- Contact Me page -------------------- */
+
 form, button {
     width: 100%;
 }
@@ -126,6 +142,8 @@ form button{
     border-radius: 10px;
 }
 
+/* -------------------- Resume page -------------------- */
+
 #resume-button{
     border-radius: 10px;
     width: 12rem;
@@ -133,6 +151,8 @@ form button{
     display: block;
     margin: 0 auto;
 }
+
+/* -------------------- Scrrens bigger than 960px -------------------- */
 
 @media screen and (min-width: 960px) {
     .project-list-item {
@@ -143,5 +163,9 @@ form button{
         display: flex;
         justify-content: space-between;
         padding-top: 3rem;
+    }
+
+    .project-img {
+        max-width: 55%;
     }
 }

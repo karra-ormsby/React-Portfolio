@@ -15,7 +15,7 @@ const projects = [
         name: 'Trail Blaze ',
         url: 'https://troy-earle.github.io/Trail-Blaze/',
         repo: 'https://github.com/troy-earle/Trail-Blaze',
-        description:'An application that allows the user to search a location and it will show them the weather at the location and available trails nearby. This appliction uses outdooractive ad open-meteo APIs. This application was completed as a group project. '
+        description:'An application that allows the user to search a location and it will show them the weather there and available trails nearby. This appliction uses outdooractive ad open-meteo APIs. This application was completed as a group project. '
     },
     {   
         id: 2,
@@ -24,7 +24,7 @@ const projects = [
         name: 'Tech Blog',
         url: 'https://my-tech-blog-2023-38c9b7057a35.herokuapp.com/',
         repo: 'https://github.com/karra-ormsby/Tech-Blog',
-        description: 'A tech blog where developers can publish their blog posts and comment on other developers’ posts. This application uses Sequelize as the database'
+        description: 'A tech blog where developers can publish their blog posts and comment on other developers’ posts. This application uses Sequelize as the database.'
     },
     {
         id: 3,
@@ -66,7 +66,7 @@ const projects = [
 
 function Portfolio(props) {
     return (
-        <section id='my-portfolio' className={props.clicked ? 'content-active' : 'content'}>
+        <section id='my-portfolio' >
             <h1>Portfolio</h1>
             <Project projects={projects} />
         </section>

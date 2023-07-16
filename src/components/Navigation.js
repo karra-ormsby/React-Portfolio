@@ -9,28 +9,25 @@ import Resume from './pages/Resume';
 
 export default function Navigation() {
     const [currentPage, setCurrentPage] = useState('About Me');
-    const [clicked, setClicked] = useState(false); 
 
     const renderPage = () => {
         if (currentPage === 'About Me') {
-            return <About clicked={clicked} />;
+            return <About />;
         }
         if (currentPage === 'Portfolio') {
-            return <Portfolio clicked={clicked} />;
+            return <Portfolio />;
         }
         if (currentPage === 'Contact Me') {
-            return <Contact clicked={clicked} />;
+            return <Contact />;
         }
-        return <Resume clicked={clicked} />;
+        return <Resume />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
         <div>
-            {/* We are passing the currentPage from state and the function to update it */}
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} clicked={clicked} setClicked={setClicked} /> 
-            {/* Here we are calling the renderPage method which will return a component  */}
+            <Header currentPage={currentPage} handlePageChange={handlePageChange} /> 
             {renderPage()}
         </div>
     );

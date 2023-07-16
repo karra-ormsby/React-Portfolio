@@ -18,6 +18,8 @@ No installation necessary. You can view the application [here](https://karra-orm
 
 ## Usage
 
+![homepage](./src/images/Homepage.png)
+
 * In the "About Me" section, you will find a brief introduction to who I am as a web developer. 
 * The "Projects" section is the heart of this portfolio page. Here, I present a collection of my notable projects. Each project is accompanied by a concise description, key features, and technologies used. You can also find links to live demos or repositories for further exploration.
 * In the "Contact" section you will find a form to get in touch with me.

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 
-function Contact(props) {
+function Contact() {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -69,12 +69,12 @@ function Contact(props) {
     };
 
     return (
-        <section id='contact' className={props.clicked ? 'content-active' : 'content'}>
+        <section id='contact' >
             <h1>Contact Me</h1>
 
             <div className="mb-3">
                 <form className="form">
-                    <label for="name" class="form-label">Name</label>
+                    <label htmlFor="name" className="form-label">Name</label>
                     <input
                         type="text"
                         value={name}
@@ -85,7 +85,7 @@ function Contact(props) {
                         className="form-control"
                         required
                     />
-                    <label for="email" class="form-label">Email</label>
+                    <label htmlFor="email" className="form-label">Email</label>
                     <input
                         value={email}
                         name="email"
@@ -95,7 +95,7 @@ function Contact(props) {
                         id="email"
                         className="form-control"
                     />
-                    <label for="message" class="form-label">Message</label>
+                    <label htmlFor="message" className="form-label">Message</label>
                     <textarea
                         value={message}
                         name="message"

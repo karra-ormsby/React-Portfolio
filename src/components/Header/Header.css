@@ -1,6 +1,6 @@
 :root{
-    --primary-color: rgb(70, 70, 255);
-    --secondary-color: #6d76f7;
+    --primary-color: #2F86CC;
+    --secondary-color: #212529;
 }
 
 * {
@@ -57,13 +57,15 @@
 }
 
 .nav-link.active {
-   color: orange;
+   color: #212529;
+   font-weight: 800;
 }
 
 
-.nav-links:hover {
+.nav-link:hover {
    background-color: var(--secondary-color);
    border-radius: 0;
+   color: #fff;
 }
 
 .navbar-logo {
@@ -87,7 +89,7 @@
 
 @media screen and (min-width: 960px) {
    .NavbarItems {
-      height: 80px;
+      height: 55px;
    }
 
    .navbar-logo {
@@ -99,12 +101,6 @@
 
    .nav-item {
       text-decoration: none;
-   }
-
-   .nav-link:hover {
-      background-color: var(--secondary-color);
-      border-radius: 4px;
-      transition: all 0.2s ease-out;
    }
 
    .menu-icon {
