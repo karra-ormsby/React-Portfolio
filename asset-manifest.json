@@ -1,20 +1,25 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.4e2bc2ea.css",
-    "main.js": "/React-Portfolio/static/js/main.7c2c928f.js",
+    "main.css": "/React-Portfolio/static/css/main.f0d3ccd5.css",
+    "main.js": "/React-Portfolio/static/js/main.2b97a522.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/Trail Blaze.png": "/React-Portfolio/static/media/Trail Blaze.5d033cab63819f1226ee.png",
+    "static/media/Weather Dashboard.png": "/React-Portfolio/static/media/Weather Dashboard.f0549675227700ecb890.png",
     "static/media/bootstrap-icons.woff?": "/React-Portfolio/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/bootstrap-icons.woff2?": "/React-Portfolio/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "static/media/Avatar.png": "/React-Portfolio/static/media/Avatar.a91c1b2e2fde5f059d07.png",
-    "static/media/Placeholder.jpeg": "/React-Portfolio/static/media/Placeholder.3c0a422b9d39f22e1be7.jpeg",
+    "static/media/Work Day Scheduler.png": "/React-Portfolio/static/media/Work Day Scheduler.e25eb061c15f120b2632.png",
+    "static/media/Note Taker.png": "/React-Portfolio/static/media/Note Taker.25dbdcdd0a003951898b.png",
+    "static/media/Tech Blog.png": "/React-Portfolio/static/media/Tech Blog.956f0cbad80b92e82ee9.png",
+    "static/media/Coding Quiz.png": "/React-Portfolio/static/media/Coding Quiz.1b77daa4ce479cffb5b2.png",
     "static/media/linkedIn-icon.png": "/React-Portfolio/static/media/linkedIn-icon.df3f373c358bcfdd92bb.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.4e2bc2ea.css.map": "/React-Portfolio/static/css/main.4e2bc2ea.css.map",
-    "main.7c2c928f.js.map": "/React-Portfolio/static/js/main.7c2c928f.js.map",
+    "main.f0d3ccd5.css.map": "/React-Portfolio/static/css/main.f0d3ccd5.css.map",
+    "main.2b97a522.js.map": "/React-Portfolio/static/js/main.2b97a522.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-Portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e2bc2ea.css",
-    "static/js/main.7c2c928f.js"
+    "static/css/main.f0d3ccd5.css",
+    "static/js/main.2b97a522.js"
   ]
 }
