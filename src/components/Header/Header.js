@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.css';
-// import './Navbar.css';
 
 function Navbar({ currentPage, handlePageChange, clicked, setClicked }) {
 

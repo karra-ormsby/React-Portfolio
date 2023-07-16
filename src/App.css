@@ -1,6 +1,11 @@
+:root{
+    --accent-color: rgb(70, 70, 255);
+}
+
 #root {
     width: 100vw;
     background-color: #212529;
+    font-family: 'Raleway', sans-serif;
 }
 
 #heading-div {
@@ -10,11 +15,6 @@
     padding-bottom: 0.5rem;
 }
 
-.content-active {
-    margin-top: 200px;
-    transition: all 0.5s ease;
-}
-
 .content {
     transition: all 0.5s ease;
 }
@@ -22,6 +22,7 @@
 #about {
     display: flex;
     justify-content: space-between;
+    display: block;
 }
 
 #avatar {
@@ -30,7 +31,11 @@
     max-height: auto;
 }
 
-#contact, #my-resume {
+span {
+    color: var(--accent-color)
+}
+
+#about, #contact, #my-resume {
     padding: 2rem 2rem 7rem 2rem;
     background-color: #212529;
     height: 100vh;
@@ -54,46 +59,89 @@
     display: inline-block;
 }
 
-.project-list-item:hover .project-info {
-    display: block;
+.project-list-item p {
+    padding-top: 1rem;
 }
 
 .project-info {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 30px;
-    text-align: center;
-    display: none;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.title h4 {
+    margin-bottom: 0;
 }
 
 .project-img {
-    max-width: 100%;
+    border-radius: 10px;
+    transform: perspective(800px) rotateY(25deg) scale(.8) rotateX(10deg);
+    transition: transform 0.3s ease-in-out;
+    max-width: 55%;
     max-height: auto;
-    padding-bottom: 2rem;
-    padding-right: 2rem;
+    margin-bottom: 10rem;
+    margin-right: 5rem;
+    box-shadow: 0 19px 67px -38px rgba(232, 231, 231, 0.7);
+}
+
+.project-img:first-child{
+    margin-top: 5rem;
+}
+
+.project-img:hover{
+    transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg) scale(.9);
+    box-shadow: none;
+}
+
+.project-button {
+    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto;
+}
+
+.project-button a, #resume-button a {
+    text-decoration: none;
+    color: black;
 }
 
 form, button {
     width: 100%;
 }
 
-button{
+label {
+    padding-top: 0.5rem;
+}
+
+form button{
     margin-top: 1rem;
+    height: 3rem;
+    border-radius: 10px;
 }
 
-footer {
-    padding: 0;
+#resume-button{
+    border-radius: 10px;
+    width: 12rem;
+    height: 3rem;
+    display: block;
+    margin: 0 auto;
 }
 
-#links {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 0.5rem;
-}
+@media screen and (min-width: 960px) {
+    .project-list-item {
+        display: flex;
+    }
 
-.icon {
-    padding-right: 1rem;
+    #skills {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 3rem;
+    }
 }
