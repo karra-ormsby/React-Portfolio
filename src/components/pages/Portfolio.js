@@ -31,7 +31,7 @@ const projects = [
         img: noteTaker,
         alt: 'Note Taker homepage',
         name: 'Note Taker',
-        url: 'https://my-note-taker-app-2023-d882066692a3.herokuapp.com/',
+        url: 'https://my-note-taker-app-2023-c8fe22ce1727.herokuapp.com/',
         repo: 'https://github.com/karra-ormsby/Note-Taker',
         description: 'An application where the user can create and delete notes.'
     },
