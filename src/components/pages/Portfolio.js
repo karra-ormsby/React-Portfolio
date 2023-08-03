@@ -5,20 +5,29 @@ import techBlog from '../../images/Tech Blog.png';
 import noteTaker from '../../images/Note Taker.png';
 import weatherDashboard from '../../images/Weather Dashboard.png';
 import codingQuiz from '../../images/Coding Quiz.png';
-import workScheduler from '../../images/Work Day Scheduler.png';
+import TuttorificDashboard from '../../images/TuttorificDashboard.png';
 
 const projects = [
-    {
+      {
         id: 1,
+        img: TuttorificDashboard,
+        alt: 'Tuttorific-teacher homepage',
+        name: 'Tuttorific Tutor',
+        url: 'https://tutoriffic-teacher-bc391b7a081b.herokuapp.com/',
+        repo: 'https://github.com/emjkenz/Tutoriffic-Teacher',
+        description: 'A planner app that displays time block for an average work day (9am to 5pm) with the colour of the time block changing depending on whether the time has passed. The planner uses local storage to store the users data. '
+    },
+    {
+        id: 2,
         img: trailBlaze,
         alt: 'Trail Blaze homepage',
         name: 'Trail Blaze ',
         url: 'https://troy-earle.github.io/Trail-Blaze/',
-        repo: 'https://github.com/troy-earle/Trail-Blaze',
-        description:'An application that allows the user to search a location and it will show them the weather there and available trails nearby. This appliction uses outdooractive ad open-meteo APIs. This application was completed as a group project. '
+        repo: 'https://github.com/emjkenz/Tutoriffic-Teacher',
+        description:'A virtual classroom application for a teacher or tutor. This is a MERN application that uses GraphQl'
     },
     {   
-        id: 2,
+        id: 3,
         img: techBlog,
         alt: 'Tech Blog homepage',
         name: 'Tech Blog',
@@ -27,7 +36,7 @@ const projects = [
         description: 'A tech blog where developers can publish their blog posts and comment on other developers’ posts. This application uses Sequelize as the database.'
     },
     {
-        id: 3,
+        id: 4,
         img: noteTaker,
         alt: 'Note Taker homepage',
         name: 'Note Taker',
@@ -36,7 +45,7 @@ const projects = [
         description: 'An application where the user can create and delete notes.'
     },
     {
-        id: 4,
+        id: 5,
         img: weatherDashboard,
         alt: 'Weather Dashboard homepage',
         name: 'Weather Dashboard',
@@ -45,22 +54,13 @@ const projects = [
         description: 'A weather dashboard where users can look up weather in location and be shown current weather and a five day forcast. Uses openweathermap API for all weather and location data.'
     },
     {
-        id: 5,
+        id: 6,
         img: codingQuiz,
         alt: 'Coding Quiz homepage',
         name: 'Coding Quiz',
         url: 'https://karra-ormsby.github.io/Coding-Quiz/',
         repo: 'https://github.com/karra-ormsby/Coding-Quiz',
         description: 'A coding quiz that utilises local storage to store users score and save them to a Highscores page.'
-    },
-    {
-        id: 6,
-        img: workScheduler,
-        alt: 'Work Day Scheduler homepage',
-        name: 'Work Day Scheduler',
-        url: 'https://karra-ormsby.github.io/Work-Day-Scheduler/',
-        repo: 'https://github.com/karra-ormsby/Work-Day-Scheduler',
-        description: 'A planner app that displays time block for an average work day (9am to 5pm) with the colour of the time block changing depending on whether the time has passed. The planner uses local storage to store the users data. '
     }
 ]
 
