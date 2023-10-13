@@ -1,11 +1,11 @@
 import React from 'react';
-import Project from '../Project';
-import trailBlaze from '../../images/Trail Blaze.png';
-import techBlog from '../../images/Tech Blog.png';
-import noteTaker from '../../images/Note Taker.png';
-import weatherDashboard from '../../images/Weather Dashboard.png';
-import codingQuiz from '../../images/Coding Quiz.png';
-import TuttorificDashboard from '../../images/TuttorificDashboard.png';
+import Project from '../components/Project';
+import trailBlaze from '../images/Trail Blaze.png';
+import techBlog from '../images/Tech Blog.png';
+import noteTaker from '../images/Note Taker.png';
+import weatherDashboard from '../images/Weather Dashboard.png';
+import codingQuiz from '../images/Coding Quiz.png';
+import TuttorificDashboard from '../images/TuttorificDashboard.png';
 
 const projects = [
       {
