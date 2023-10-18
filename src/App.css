@@ -18,7 +18,7 @@
 #about,
 #contact,
 #my-resume {
-    padding: 2rem 2rem 7rem 2rem;
+    padding: 7rem 2rem 7rem 2rem;
     background-color: #212529;
     height: 100vh;
     color: white;
@@ -28,6 +28,17 @@ button {
     background-color: var(--accent-color);
     border: none;
 }
+
+/* -------------------- Header -------------------- */
+
+header {
+    background-color: #2F86CC;
+    width: 100vw;
+    height: 4rem;
+    transition: all 0.5s ease;
+    position: fixed;
+}
+
 
 /* -------------------- About Me page -------------------- */
 
@@ -57,7 +68,7 @@ button {
 /* -------------------- Portfolio page -------------------- */
 
 #my-portfolio {
-    padding: 2rem 2rem 7rem 2rem;
+    padding: 7rem 2rem 7rem 2rem;
     background-color: #212529;
     color: white;
 }

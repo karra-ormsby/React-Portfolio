@@ -16,9 +16,6 @@ function Footer () {
                 </a>
                 <div></div>
             </div>
-            <div className="container text-center">
-                <small>Copyright &copy; Karra Ormsby</small>
-            </div>
         </footer>
     )
 }
