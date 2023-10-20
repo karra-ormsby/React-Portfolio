@@ -3,7 +3,7 @@
 }
 
 #root {
-    width: 100vw;
+    /* width: 100vw; */
     background-color: #212529;
     font-family: 'Raleway', sans-serif;
 }
@@ -18,11 +18,18 @@
 #about-section,
 #contact,
 #my-resume {
-    padding: 7rem 2rem 7rem 2rem;
+    /* padding: 7rem 2rem 7rem 2rem; */
     background-color: #212529;
-    height: 100vh;
+    /* height: 100vh; */
     color: white;
 }
+
+.home {
+    padding-top: 7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 
 button {
     background-color: var(--accent-color);
@@ -37,6 +44,7 @@ header {
     height: 4rem;
     transition: all 0.5s ease;
     position: fixed;
+    z-index: 100;
 }
 
 
@@ -88,14 +96,15 @@ header {
 
 .avatar-image-div {
     flex: 1;
-    width: 400px;
-    height: 400px;
-    transform: scale(1.5);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
 #avatar {
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -112,7 +121,8 @@ header {
 /* -------------------- Portfolio page -------------------- */
 
 #my-portfolio {
-    padding: 7rem 2rem 7rem 2rem;
+    /* padding-left: 2rem;
+    padding-right: 2rem; */
     background-color: #212529;
     color: white;
 }
