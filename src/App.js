@@ -38,7 +38,7 @@ function App() {
             <Route exact path="/Resume" element={<Resume />} />
           </Routes>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );
