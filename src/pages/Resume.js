@@ -2,7 +2,7 @@ import React from 'react';
 
 function Resume() {
     return (
-        <section id='my-resume' >
+        <section id='resume' >
             <h1>Resume</h1>
             <div id='skills'>
                 <div>

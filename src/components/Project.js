@@ -1,5 +1,5 @@
 import React from 'react';
-import gitHubLogo from '../images/github-mark-white.png'
+import { GithubOutlined } from '@ant-design/icons';
 
 function Project (props) {
     return (
@@ -11,7 +11,9 @@ function Project (props) {
                         <div className='project-info'>
                             <div className='title'>
                                 <h4>{item.name}</h4>
-                                <a href={item.repo}><img className='repo-logo' src={gitHubLogo} width="40" /></a>
+                                <a href={item.repo}>
+                                    <GithubOutlined className='icons'/>
+                                </a>
                             </div>
                             <p>{item.description}</p>
                             <button className='project-button' ><a href={item.url}>Visit site</a></button>

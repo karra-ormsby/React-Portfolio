@@ -67,8 +67,10 @@ const projects = [
 function Portfolio(props) {
     return (
         <section id='my-portfolio' >
-            <h1>Portfolio</h1>
-            <Project projects={projects} />
+            <div id='portfolio'>
+                <h1>Portfolio</h1>
+                <Project projects={projects} />
+            </div>
         </section>
     );
 }

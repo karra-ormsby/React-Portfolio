@@ -15,19 +15,17 @@
     font-weight: 700;
 }
 
-#about-section,
+#about,
 #contact,
-#my-resume {
-    /* padding: 7rem 2rem 7rem 2rem; */
-    background-color: #212529;
-    /* height: 100vh; */
+#resume,
+#portfolio {
+    padding-top: 5rem;
+    /* background-color: #212529; */
     color: white;
 }
 
 .home {
-    padding-top: 7rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 5rem 2rem 0 2rem;
 }
 
 
@@ -51,7 +49,7 @@ header {
 /* -------------------- About Me page -------------------- */
 
 #about {
-    margin-top: 7rem;
+    /* margin-top: 4rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,15 +119,11 @@ header {
 /* -------------------- Portfolio page -------------------- */
 
 #my-portfolio {
-    /* padding-left: 2rem;
-    padding-right: 2rem; */
-    background-color: #212529;
     color: white;
 }
 
 #project-list {
     list-style: none;
-    background-color: #212529;
     color: white;
 }
 
@@ -165,8 +159,6 @@ header {
     transition: transform 0.3s ease-in-out;
     max-width: 100%;
     max-height: auto;
-    margin-bottom: 10rem;
-    margin-right: 5rem;
     box-shadow: 0 19px 67px -38px rgba(232, 231, 231, 0.7);
 }
 
@@ -191,22 +183,6 @@ header {
     color: black;
 }
 
-/* -------------------- Contact Me page -------------------- */
-
-form, button {
-    width: 100%;
-}
-
-label {
-    padding-top: 0.5rem;
-}
-
-form button{
-    margin-top: 1rem;
-    height: 3rem;
-    border-radius: 10px;
-}
-
 /* -------------------- Resume page -------------------- */
 
 #resume-button{
@@ -216,6 +192,35 @@ form button{
     display: block;
     margin: 0 auto;
 }
+
+/* -------------------- Contact Me page -------------------- */
+
+#contact {
+    padding-bottom: 3rem;
+}
+
+label{
+    color: white !important;
+}
+
+input:hover {
+    
+}
+
+/* form,
+button {
+    width: 100%;
+}
+
+label {
+    padding-top: 0.5rem;
+}
+
+form button {
+    margin-top: 1rem;
+    height: 3rem;
+    border-radius: 10px;
+} */
 
 /* -------------------- Scrrens bigger than 960px -------------------- */
 

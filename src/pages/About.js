@@ -34,7 +34,6 @@ function About() {
                     <img img id='avatar' src={avatar} alt='avatar'/>
                 </div>
             </div>
-            
         </section>
     );
 }

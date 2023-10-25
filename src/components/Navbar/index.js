@@ -3,40 +3,43 @@ import { Link } from "react-router-dom";
 import { Dropdown, Space, Typography } from 'antd';
 import { DownOutlined,  MenuFoldOutlined} from '@ant-design/icons';
 import './Navbar.css'
+import { HashLink } from 'react-router-hash-link';
 
 const Navbar = ({ onNavHover }) => {
     const items = [
-    {
-        key: '1',
-        label: 'About Me',
-        to: '/',
-    },
-    {
-        key: '2',
-        label: 'Contact',
-        to: '/Contact',
-    },
-    {
-        key: '3',
-        label: 'Portfolio',
-        to: '/Portfolio',
-    },
-     {
-        key: '4',
-        label: 'Resume',
-        to: '/Resume',
-    },
+        {
+            key: '1',
+            label: 'About Me',
+            to: '/#about',
+        },
+        {
+            key: '2',
+            label: 'Portfolio',
+            to: '/#portfolio',
+        },
+        {
+            key: '3',
+            label: 'Resume',
+            to: '/#resume',
+        },
+        {
+            key: '4',
+            label: 'Contact',
+            to: '/#contact',
+        }
     ];
 
     const menu = (
         <ul className="navLinks">
             {items.map((item) => (
             <li className="navItem" key={item.key} >
-                <Link to={item.to}>{item.label}</Link>
+                <HashLink smooth to={item.to}>{item.label}</HashLink>
             </li>
             ))}
         </ul>
     );
+
+    
 
     return(
         <div className="navbar">
@@ -55,5 +58,9 @@ const Navbar = ({ onNavHover }) => {
 
 }
 
+// const Navbar = () => {
+//     <HashLink smooth to='/#about' > About Me </HashLink>
+
+// };
 
 export default Navbar;
