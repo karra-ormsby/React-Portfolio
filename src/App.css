@@ -3,7 +3,6 @@
 }
 
 #root {
-    /* width: 100vw; */
     background-color: #212529;
     font-family: 'Raleway', sans-serif;
 }
@@ -19,8 +18,7 @@
 #contact,
 #resume,
 #portfolio {
-    padding-top: 5rem;
-    /* background-color: #212529; */
+    margin-top: 5rem;
     color: white;
 }
 
@@ -32,6 +30,10 @@
 button {
     background-color: var(--accent-color);
     border: none;
+    border-radius: 10px;
+    width: 8rem;
+    height: 3rem;
+    margin: 0 auto;
 }
 
 /* -------------------- Header -------------------- */
@@ -49,7 +51,6 @@ header {
 /* -------------------- About Me page -------------------- */
 
 #about {
-    /* margin-top: 4rem; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +68,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 2rem;
+    margin: 2rem;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -95,6 +96,8 @@ header {
 .avatar-image-div {
     flex: 1;
     width: 100%;
+    /* width: 400px;
+    height: 400px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -104,12 +107,6 @@ header {
     width: 200%;
     height: auto;
     object-fit: cover;
-}
-
-.contact-btn {
-    background-color: var(--accent-color);
-    border-color: var(--accent-color);
-    width: 15%;
 }
 
 .contact-btn:hover {
@@ -133,7 +130,7 @@ header {
 }
 
 .project-list-item p {
-    padding-top: 1rem;
+    margin-top: 1rem;
 }
 
 .project-info {
@@ -171,13 +168,6 @@ header {
     box-shadow: none;
 }
 
-.project-button {
-    border-radius: 10px;
-    width: 8rem;
-    height: 3rem;
-    margin: 0 auto;
-}
-
 .project-button a, #resume-button a {
     text-decoration: none;
     color: black;
@@ -186,7 +176,6 @@ header {
 /* -------------------- Resume page -------------------- */
 
 #resume-button{
-    border-radius: 10px;
     width: 12rem;
     height: 3rem;
     display: block;
@@ -199,30 +188,35 @@ header {
     padding-bottom: 3rem;
 }
 
+#hero2 {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 25%;
+}
+
 label{
     color: white !important;
 }
 
-input:hover {
-    
+#contact-btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
 }
 
-/* form,
-button {
-    width: 100%;
+#image-container {
+    position: relative;
 }
 
-label {
-    padding-top: 0.5rem;
+#avatar2 {
+    max-width: 100%;
+    transform: scalex(-1);
+    position: absolute;
+    top: -5rem;
+    right: 3rem;
 }
 
-form button {
-    margin-top: 1rem;
-    height: 3rem;
-    border-radius: 10px;
-} */
 
-/* -------------------- Scrrens bigger than 960px -------------------- */
+/* -------------------- Screens bigger than 960px -------------------- */
 
 @media screen and (min-width: 960px) {
     .project-list-item {
@@ -232,7 +226,7 @@ form button {
     #skills {
         display: flex;
         justify-content: space-between;
-        padding-top: 3rem;
+        margin-top: 3rem;
     }
 
     .project-img {

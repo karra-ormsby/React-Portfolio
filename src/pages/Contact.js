@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
-import { Form, Input, Button } from 'antd';
+import { Form, Input } from 'antd';
+import avatar from '../images/Avatar.png'
 
 function Contact() {
 
@@ -71,43 +72,54 @@ function Contact() {
 
     return (
         <section id='contact' >
-            <h1>Contact Me</h1>
-              <Form
-                name="contactForm"
-                labelCol={{ span: 8 }}  // This controls the label width in the vertical form
-                wrapperCol={{ span: 16 }}
-                layout="vertical" // Set the layout to 'vertical'
-                >
-                <Form.Item
-                    label="Name"
-                    name="name"
-                    rules={[{ required: true, message: 'Please input a name!' }]}
-                >
-                    <Input />
-                </Form.Item>
-
-                <Form.Item
-                    label="Email"
-                    name="email"
-                    rules={[{ required: true, message: 'Please input an email!' }]}
-                >
-                    <Input />
-                </Form.Item>
-                 <Form.Item
-                    label="Message"
-                    name="message"
-                    rules={[{ required: true, message: 'Please write a message!' }]}
-                >
-                    <Input.TextArea />
-                </Form.Item>
-
-                <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-                    <Button type="primary" htmlType="submit">
-                    Submit
-                    </Button>
-                </Form.Item>
-            </Form>
             
+            <h1>Contact Me</h1>
+
+            <div id='hero2'>
+                <Form
+                    name="contactForm"
+                    // Controls the label width in the vertical form
+                    labelCol={{ span: 8 }}
+                    wrapperCol={{ span: 16 }}
+                    // Set the layout to 'vertical'
+                    layout="vertical"
+                    >
+                    <Form.Item
+                        label="Name"
+                        name="name"
+                        rules={[{ required: true, message: 'Please input a name!' }]}
+                    >
+                        <Input />
+                    </Form.Item>
+
+                    <Form.Item
+                        label="Email"
+                        name="email"
+                        rules={[{ required: true, message: 'Please input an email!' }]}
+                    >
+                        <Input />
+                    </Form.Item>
+                    <Form.Item
+                        label="Message"
+                        name="message"
+                        rules={[{ required: true, message: 'Please write a message!' }]}
+                    >
+                        <Input.TextArea />
+                    </Form.Item>
+
+                    <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                        <button id ='contact-btn' type="primary" htmlType="submit">
+                        Submit
+                        </button>
+                    </Form.Item>
+                </Form>
+
+                 <div id="image-container">
+                    <img id='avatar2' src={avatar} alt='avatar waving' />
+                </div>
+
+            </div>
+
         </section>
     );
 }
