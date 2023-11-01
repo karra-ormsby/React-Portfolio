@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,30 +13,31 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume'
 import './App.css'
+import ThemeProvider from "./utils/ThemeContext";
 
 function App() {
-  const [hovered, setHovered] = useState(false);
+  // const [hovered, setHovered] = useState(false);
 
-  const handleIconHover = () => {
-    setHovered(!hovered);
-  };
+  // const handleIconHover = () => {
+  //   setHovered(!hovered);
+  // };
 
   return (
     <div>
       <Router>
         <div>
-          <header>
+          {/* <header>
             <Navbar onNavHover={handleIconHover} />
-          </header>
-
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/About" element={<About />} />
-            <Route exact path="/Contact" element={<Contact />} />
-            <Route exact path="/Portfolio" element={<Portfolio />} />
-            <Route exact path="/Resume" element={<Resume />} />
-            {/* <Route path="/" component={About} /> Set the "/" route to render the About component */}
-          </Routes>
+          </header> */}
+          <ThemeProvider>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route exact path="/About" element={<About />} />
+              <Route exact path="/Contact" element={<Contact />} />
+              <Route exact path="/Portfolio" element={<Portfolio />} />
+              <Route exact path="/Resume" element={<Resume />} />
+            </Routes>
+          </ThemeProvider>
         </div>
       </Router>
     </div>

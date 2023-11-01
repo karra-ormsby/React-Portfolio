@@ -1,17 +1,24 @@
 .menuIcon {
     padding: 1rem;
     font-size: 1.5rem;
+}
+
+.menuIcon.dark {
+    color: #FBFBFB;
+}
+
+.menuIcon.light {
     color: #212529;
 }
 
-.navbar {
+#navbar {
     position: fixed;
     top: -0.7rem;
     right: 0;
 }
 
 .navLinks {
-    background-color: #2F86CC;
+    background-color: inherit;
     width: 100vw;
     text-align: center;
     font-size: 1.2rem;
@@ -22,14 +29,10 @@
 }
 
 .navItem a {
-    color: black;
+    color: #2F86CC;
     text-decoration: none;
 }
 
 .navItem a:hover {
     text-decoration: underline;
-}
-
-.navItem a:active {
-    /* Add styles in here*/
 }

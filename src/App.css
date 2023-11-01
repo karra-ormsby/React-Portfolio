@@ -3,10 +3,36 @@
 }
 
 #root {
-    background-color: #212529;
     font-family: 'Raleway', sans-serif;
 }
 
+.app.dark {
+    /* Styles specific to the dark theme */
+    background-color: #212529;
+    color: #FBFBFB;
+}
+
+.app.light {
+    /* Styles specific to the light theme */
+    background-color: #FBFBFB;
+    color: #212529;
+}
+
+.header.dark {
+    /* Styles specific to the dark theme */
+    /* background-color: #212529; */
+    color: #FBFBFB;
+}
+
+.header.light {
+    /* Styles specific to the light theme */
+    /* background-color: #FBFBFB; */
+    color: #212529;
+}
+
+#themebutton{
+    margin-top: 5rem;
+}
 /* -------------------- Multiple Pages -------------------- */
 
 .accent {
@@ -19,11 +45,15 @@
 #resume,
 #portfolio {
     margin-top: 5rem;
-    color: white;
+    /* color: black; */
 }
 
-.home {
-    padding: 5rem 2rem 0 2rem;
+#home {
+    padding: 0 2rem;
+}
+
+.github {
+    color: #6e5494;
 }
 
 
@@ -34,12 +64,12 @@ button {
     width: 8rem;
     height: 3rem;
     margin: 0 auto;
+    color: #FBFBFB;
 }
 
 /* -------------------- Header -------------------- */
 
 header {
-    background-color: #2F86CC;
     width: 100vw;
     height: 4rem;
     transition: all 0.5s ease;
@@ -84,13 +114,13 @@ header {
 }
 
 .icons {
-    font-size: 1.8rem;
-    color: white;
-    opacity: 0.7;
+    font-size: 2.5rem;
+    /* color: black; */
+    opacity: 1;
 }
 
 .icons:hover {
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .avatar-image-div {
@@ -104,7 +134,7 @@ header {
 }
 
 #avatar {
-    width: 200%;
+    width: 40%;
     height: auto;
     object-fit: cover;
 }
@@ -113,15 +143,23 @@ header {
     color: black !important;
 }
 
+#contact-button {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    padding: .5rem 1.5em;
+    color: #FBFBFB;
+    text-decoration: none;
+}
+
 /* -------------------- Portfolio page -------------------- */
 
 #my-portfolio {
-    color: white;
+    /* color: black; */
 }
 
 #project-list {
     list-style: none;
-    color: white;
+    /* color: black; */
 }
 
 .project-list-item {
@@ -170,7 +208,8 @@ header {
 
 .project-button a, #resume-button a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
+    color: #FBFBFB;
 }
 
 /* -------------------- Resume page -------------------- */
@@ -195,7 +234,9 @@ header {
 }
 
 label{
-    color: white !important;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    color: black !important;
 }
 
 #contact-btn {

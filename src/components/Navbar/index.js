@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Dropdown, Space, Typography } from 'antd';
-import { DownOutlined,  MenuFoldOutlined} from '@ant-design/icons';
+import { MenuFoldOutlined} from '@ant-design/icons';
 import './Navbar.css'
 import { HashLink } from 'react-router-hash-link';
+import { useTheme } from "../../utils/ThemeContext";
 
 const Navbar = ({ onNavHover }) => {
     const items = [
@@ -39,17 +39,19 @@ const Navbar = ({ onNavHover }) => {
         </ul>
     );
 
+    const { darkTheme, toggleTheme } = useTheme();
+
     
 
     return(
-        <div className="navbar">
+        <div id="navbar" >
             <Dropdown overlay={menu} placement="bottomLeft" >
             <Typography.Link
                 onMouseEnter={onNavHover}
                 onMouseLeave={onNavHover}
             >
                 <Space>
-                <MenuFoldOutlined className="menuIcon"/>
+                <MenuFoldOutlined className={`menuIcon ${darkTheme ? 'dark' : 'light'}`}/>
                 </Space>
             </Typography.Link>
             </Dropdown>
@@ -57,10 +59,5 @@ const Navbar = ({ onNavHover }) => {
     )
 
 }
-
-// const Navbar = () => {
-//     <HashLink smooth to='/#about' > About Me </HashLink>
-
-// };
 
 export default Navbar;

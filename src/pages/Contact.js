@@ -5,70 +5,46 @@ import avatar from '../images/Avatar.png'
 
 function Contact() {
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
-    const [nameError, setNameError] = useState(false);
-    const [emailError, setEmailError] = useState(false);
-    const [messgaeError, setMessageError] = useState(false);
+    // const [name, setName] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [message, setMessage] = useState('');
+    // const [errorMessage, setErrorMessage] = useState('');
+    // const [nameError, setNameError] = useState(false);
+    // const [emailError, setEmailError] = useState(false);
+    // const [messgaeError, setMessageError] = useState(false);
 
-    const handleInputChange = (e) => {
-        const { target } = e;
-        const inputType = target.name;
-        const inputValue = target.value;
+    // const handleInputChange = (e) => {
+    //     const { target } = e;
+    //     const inputType = target.name;
+    //     const inputValue = target.value;
 
-        if (inputType === 'name') {
-            setName(inputValue);
-        } else if (inputType === 'email') {
-            setEmail(inputValue);
-        } else if (inputType === 'message'){
-            setMessage(inputValue);
-        }
-    };
+    //     if (inputType === 'name') {
+    //         setName(inputValue);
+    //     } else if (inputType === 'email') {
+    //         setEmail(inputValue);
+    //     } else if (inputType === 'message'){
+    //         setMessage(inputValue);
+    //     }
+    // };
 
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
+    // const handleFormSubmit = (e) => {
+    //     e.preventDefault();
 
-        if (!name || !email || !message) {
-            setErrorMessage('Please make sure you have filled in all fields');
-            return;
-        }
+    //     if (!name || !email || !message) {
+    //         setErrorMessage('Please make sure you have filled in all fields');
+    //         return;
+    //     }
 
-        if (!validateEmail(email)) {
-            setErrorMessage('Please enter a valid email address');
-            return;
-        }
+    //     if (!validateEmail(email)) {
+    //         setErrorMessage('Please enter a valid email address');
+    //         return;
+    //     }
 
 
-        setName('');
-        setEmail('');
-        setMessage('');
-    };
-
-    const handleNameBlur = () => {
-        if (name.trim() === '') {
-            setNameError(true);
-        } else {
-            setNameError(false);
-        }
-    };
-
-    const handleEmailBlur = () => {
-        if (name.trim() === '') {
-            setEmailError(true);
-        } else {
-            setEmailError(false);
-        }
-    };
-
-    const handleMessagelur = () => {
-        if (name.trim() === '') {
-            setMessageError(true);
-        } else {
-            setMessageError(false);
-        }
-    };
+    //     setName('');
+    //     setEmail('');
+    //     setMessage('');
+    // };
 
     return (
         <section id='contact' >
@@ -95,7 +71,7 @@ function Contact() {
                     <Form.Item
                         label="Email"
                         name="email"
-                        rules={[{ required: true, message: 'Please input an email!' }]}
+                        rules={[{ required: true, type: "email", message: 'Please input an email!' }]}
                     >
                         <Input />
                     </Form.Item>
@@ -107,7 +83,7 @@ function Contact() {
                         <Input.TextArea />
                     </Form.Item>
 
-                    <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+                    <Form.Item>
                         <button id ='contact-btn' type="primary" htmlType="submit">
                         Submit
                         </button>

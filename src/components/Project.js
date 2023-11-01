@@ -11,7 +11,7 @@ function Project (props) {
                         <div className='project-info'>
                             <div className='title'>
                                 <h4>{item.name}</h4>
-                                <a href={item.repo}>
+                                <a className='github' href={item.repo}>
                                     <GithubOutlined className='icons'/>
                                 </a>
                             </div>
