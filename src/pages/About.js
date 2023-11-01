@@ -4,6 +4,7 @@ import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
 import avatar from '../images/Avatar2.png'
 
 function About() {
+
     return (
         <section id='about-section' >
             <div id='about'>
@@ -26,8 +27,7 @@ function About() {
                         I am excited to showcase my skills and passion for crafting innovative and user-friendly digital experiences. With a strong foundation in both front-end and back-end technologies, I am proficient in HTML, CSS, JavaScript, and various frameworks such as React and Node.js. My portfolio website serves as a testament to my ability to create visually appealing designs while ensuring seamless functionality. By combining my technical expertise with my creative problem-solving abilities, I strive to deliver robust and intuitive web solutions that exceed client expectations. Join me on this journey as I continue to evolve and explore the ever-changing world of web development.
                         </p>
 
-                        {/* <button>Let's Chat!</button> */}
-                        <HashLink id='contact-button' smooth to='/#contact'>Let's Chat!</HashLink>
+                        <HashLink id='contact-button' smooth to='/React-Portfolio/#contact'>Let's Chat!</HashLink>
                     </div>
                 </div>
 

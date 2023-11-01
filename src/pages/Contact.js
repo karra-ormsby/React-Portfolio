@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import { useTheme } from '../utils/ThemeContext';
 import { Form, Input } from 'antd';
 import avatar from '../images/Avatar.png'
 
@@ -46,6 +47,8 @@ function Contact() {
     //     setMessage('');
     // };
 
+    const { darkTheme, toggleTheme } = useTheme();
+
     return (
         <section id='contact' >
             
@@ -61,6 +64,7 @@ function Contact() {
                     layout="vertical"
                     >
                     <Form.Item
+                        className={`form-item ${darkTheme ? 'dark' : 'light'}`}
                         label="Name"
                         name="name"
                         rules={[{ required: true, message: 'Please input a name!' }]}

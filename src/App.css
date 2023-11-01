@@ -126,8 +126,6 @@ header {
 .avatar-image-div {
     flex: 1;
     width: 100%;
-    /* width: 400px;
-    height: 400px; */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -153,13 +151,8 @@ header {
 
 /* -------------------- Portfolio page -------------------- */
 
-#my-portfolio {
-    /* color: black; */
-}
-
 #project-list {
     list-style: none;
-    /* color: black; */
 }
 
 .project-list-item {
@@ -208,7 +201,6 @@ header {
 
 .project-button a, #resume-button a {
     text-decoration: none;
-    /* color: black; */
     color: #FBFBFB;
 }
 
@@ -233,11 +225,11 @@ header {
     grid-template-columns: 1fr 25%;
 }
 
-label{
+/* label{
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     color: black !important;
-}
+} */
 
 #contact-btn {
     font-family: 'Raleway', sans-serif;
@@ -254,6 +246,14 @@ label{
     position: absolute;
     top: -5rem;
     right: 3rem;
+}
+
+.form-item.dark {
+    color: #FBFBFB !important;
+}
+
+.form-item.light {
+    color: #212529 ;
 }
 
 

@@ -10,22 +10,22 @@ const Navbar = ({ onNavHover }) => {
         {
             key: '1',
             label: 'About Me',
-            to: '/#about',
+            to: '/React-Portfolio/#about',
         },
         {
             key: '2',
             label: 'Portfolio',
-            to: '/#portfolio',
+            to: '/React-Portfolio/#portfolio',
         },
         {
             key: '3',
             label: 'Resume',
-            to: '/#resume',
+            to: '/React-Portfolio/#resume',
         },
         {
             key: '4',
             label: 'Contact',
-            to: '/#contact',
+            to: '/React-Portfolio/#contact',
         }
     ];
 
@@ -40,9 +40,7 @@ const Navbar = ({ onNavHover }) => {
     );
 
     const { darkTheme, toggleTheme } = useTheme();
-
-    
-
+ 
     return(
         <div id="navbar" >
             <Dropdown overlay={menu} placement="bottomLeft" >
