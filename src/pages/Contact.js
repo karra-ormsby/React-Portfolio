@@ -1,68 +1,46 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import React from 'react';
 import { useTheme } from '../utils/ThemeContext';
-import { Form, Input } from 'antd';
-import avatar from '../images/Avatar.png'
+import { Form, Input, Button } from 'antd';
+import emailjs from '@emailjs/browser';
+import avatar from '../images/Avatar.png';
 
 function Contact() {
+    // create a form instance and store it in the form variable.
+    const [form] = Form.useForm();
 
-    // const [name, setName] = useState('');
-    // const [email, setEmail] = useState('');
-    // const [message, setMessage] = useState('');
-    // const [errorMessage, setErrorMessage] = useState('');
-    // const [nameError, setNameError] = useState(false);
-    // const [emailError, setEmailError] = useState(false);
-    // const [messgaeError, setMessageError] = useState(false);
+    const sendEmail = () => {
 
-    // const handleInputChange = (e) => {
-    //     const { target } = e;
-    //     const inputType = target.name;
-    //     const inputValue = target.value;
+        // use this to get the form values. This is needed as Ant Design handle form validation and submission differently.
+        form.validateFields().then((values) => {
+            console.log('Form values:', values);
 
-    //     if (inputType === 'name') {
-    //         setName(inputValue);
-    //     } else if (inputType === 'email') {
-    //         setEmail(inputValue);
-    //     } else if (inputType === 'message'){
-    //         setMessage(inputValue);
-    //     }
-    // };
+            emailjs.send('service_zsvo20n', 'template_dul4hhs', values, 'BBtbIuKyxrzKgoK2q')
+                .then((result) => {
+                    console.log(result.text);
+                })
+                .catch((error) => {
+                    console.log(error.text);
+                });
 
-    // const handleFormSubmit = (e) => {
-    //     e.preventDefault();
-
-    //     if (!name || !email || !message) {
-    //         setErrorMessage('Please make sure you have filled in all fields');
-    //         return;
-    //     }
-
-    //     if (!validateEmail(email)) {
-    //         setErrorMessage('Please enter a valid email address');
-    //         return;
-    //     }
-
-
-    //     setName('');
-    //     setEmail('');
-    //     setMessage('');
-    // };
+            // clear the form fields
+            form.resetFields();
+        });
+    };
 
     const { darkTheme, toggleTheme } = useTheme();
 
     return (
-        <section id='contact' >
-            
+        <section id="contact">
             <h1>Contact Me</h1>
-
-            <div id='hero2'>
+            <div id="hero2">
                 <Form
+                    // used to associate the form variable with the Ant Design Form component. This allows the form variable to control and manage the state of the form component.
+                    form={form}
                     name="contactForm"
-                    // Controls the label width in the vertical form
                     labelCol={{ span: 8 }}
                     wrapperCol={{ span: 16 }}
-                    // Set the layout to 'vertical'
                     layout="vertical"
-                    >
+                >
                     <Form.Item
                         className={`form-item ${darkTheme ? 'dark' : 'light'}`}
                         label="Name"
@@ -73,13 +51,15 @@ function Contact() {
                     </Form.Item>
 
                     <Form.Item
+                        className={`form-item ${darkTheme ? 'dark' : 'light'}`}
                         label="Email"
                         name="email"
-                        rules={[{ required: true, type: "email", message: 'Please input an email!' }]}
+                        rules={[{ required: true, type: 'email', message: 'Please input an email!' }]}
                     >
                         <Input />
                     </Form.Item>
                     <Form.Item
+                    className={`form-item ${darkTheme ? 'dark' : 'light'}`}
                         label="Message"
                         name="message"
                         rules={[{ required: true, message: 'Please write a message!' }]}
@@ -88,18 +68,16 @@ function Contact() {
                     </Form.Item>
 
                     <Form.Item>
-                        <button id ='contact-btn' type="primary" htmlType="submit">
-                        Submit
+                        <button id="contact-btn" type="primary" onClick={sendEmail}>
+                            Submit
                         </button>
                     </Form.Item>
                 </Form>
 
-                 <div id="image-container">
-                    <img id='avatar2' src={avatar} alt='avatar waving' />
+                <div id="image-container">
+                    <img id="avatar2" src={avatar} alt="avatar waving" />
                 </div>
-
             </div>
-
         </section>
     );
 }

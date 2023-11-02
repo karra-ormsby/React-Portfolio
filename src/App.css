@@ -7,26 +7,12 @@
 }
 
 .app.dark {
-    /* Styles specific to the dark theme */
     background-color: #212529;
     color: #FBFBFB;
 }
 
 .app.light {
-    /* Styles specific to the light theme */
     background-color: #FBFBFB;
-    color: #212529;
-}
-
-.header.dark {
-    /* Styles specific to the dark theme */
-    /* background-color: #212529; */
-    color: #FBFBFB;
-}
-
-.header.light {
-    /* Styles specific to the light theme */
-    /* background-color: #FBFBFB; */
     color: #212529;
 }
 
@@ -60,7 +46,6 @@
 button {
     background-color: var(--accent-color);
     border: none;
-    border-radius: 10px;
     width: 8rem;
     height: 3rem;
     margin: 0 auto;
@@ -77,6 +62,13 @@ header {
     z-index: 100;
 }
 
+.header.dark {
+    color: #FBFBFB;
+}
+
+.header.light {
+    color: #212529;
+}
 
 /* -------------------- About Me page -------------------- */
 
@@ -115,7 +107,6 @@ header {
 
 .icons {
     font-size: 2.5rem;
-    /* color: black; */
     opacity: 1;
 }
 
@@ -137,13 +128,8 @@ header {
     object-fit: cover;
 }
 
-.contact-btn:hover {
-    color: black !important;
-}
-
 #contact-button {
     background-color: var(--accent-color);
-    border-radius: 10px;
     padding: .5rem 1.5em;
     color: #FBFBFB;
     text-decoration: none;
@@ -225,11 +211,32 @@ header {
     grid-template-columns: 1fr 25%;
 }
 
-/* label{
+/* changing the label text colour depending on theme */
+.form-item.dark .ant-form-item-required {
+    color: #FBFBFB;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
-    color: black !important;
-} */
+}
+
+.form-item.light .ant-form-item-required {
+    color: #212529;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+input,
+textarea {
+    border-radius: 0 !important;
+    font-size: 1.5rem !important;
+}
+
+/* removing the base Ant Design styles for input and textarea elements in forms on hover and on focus */
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    background-color: white !important;
+}
 
 #contact-btn {
     font-family: 'Raleway', sans-serif;
@@ -247,15 +254,6 @@ header {
     top: -5rem;
     right: 3rem;
 }
-
-.form-item.dark {
-    color: #FBFBFB !important;
-}
-
-.form-item.light {
-    color: #212529 ;
-}
-
 
 /* -------------------- Screens bigger than 960px -------------------- */
 
