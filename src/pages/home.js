@@ -45,11 +45,11 @@ function Home() {
             </header> */}
             <header className={`header ${darkTheme ? 'dark' : 'light'}`}>
                 <h1 id='header-heading'>Karra Ormsby</h1>
-                <Row>
-                    <Col sm={1} lg={2}>
+                <Row justify="center">
+                    <Col sm={1} lg={2} xl={2}>
                         <div></div>
                     </Col>
-                    <Col sm={4} md={14} lg={10}>
+                    <Col sm={4} md={14} lg={10} xl={10}>
                         <div id='nav-links'>
                             <Row justify="space-between">
                                 <Col span={5}>
@@ -67,7 +67,7 @@ function Home() {
                             </Row>
                         </div>
                     </Col>
-                    <Col sm={1} lg={2}>
+                    <Col sm={1} lg={2} xl={2}>
                         <div></div>
                     </Col>
                 </Row>
