@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import Navbar from './components/Navbar'
 import Home from "./pages/Home";
 import About from './pages/About';
 import Contact from './pages/Contact';

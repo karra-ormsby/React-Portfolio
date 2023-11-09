@@ -1,6 +1,5 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
-import { GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
 import avatar from '../images/Avatar2.png'
 
 function About() {

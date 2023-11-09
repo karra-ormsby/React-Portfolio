@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTheme } from '../utils/ThemeContext';
 import { GithubOutlined } from '@ant-design/icons';
 
 function Project (props) {
+    const { darkTheme } = useTheme();
+
     return (
         <section id='projects'>
             <ul id='project-list'>
@@ -11,7 +14,7 @@ function Project (props) {
                         <div className='project-info'>
                             <div className='title'>
                                 <h4>{item.name}</h4>
-                                <a className='github' href={item.repo}>
+                                <a className={`github ${darkTheme ? 'dark' : 'light'}`} href={item.repo}>
                                     <GithubOutlined />
                                 </a>
                             </div>

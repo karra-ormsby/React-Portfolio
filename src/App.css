@@ -2,21 +2,22 @@
     --accent-color: #f6a84b;
     --light-theme: #EAEAEA;
     --dark-theme: #121212;
+    --light-theme-text: #212529;
+    --dark-theme-text: #FBFBFB;
 }
 
 #root {
-    /* font-family: 'Raleway', sans-serif; */
     font-family: 'Roboto', sans-serif;
 }
 
 .app.dark {
     background-color: var(--dark-theme);
-    color: #FBFBFB;
+    color: var(--dark-theme-text);
 }
 
 .app.light {
     background-color: var(--light-theme);
-    color: #212529;
+    color: var(--light-theme-text);
 }
 
 #themebutton{
@@ -43,7 +44,7 @@ button {
     width: 8rem;
     height: 3rem;
     margin: 0 auto;
-    color: #FBFBFB;
+    color: var(--dark-theme-text);
 }
 
 /* -------------------- Header -------------------- */
@@ -57,14 +58,10 @@ header {
     text-align: center;
     padding: 1rem 0;
     border-bottom: 1px black solid;
-    color: #212529;
+    color: var(--light-theme-text);
 }
 
 #nav-links {
-    /* display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 0 1rem; */
     text-align: center;
 }
 
@@ -93,7 +90,7 @@ header {
 
 .ant-col>a {
     text-decoration: none;
-    color: #212529;
+    color: var(--light-theme-text);
     font-size: 1.2rem;
 }
 
@@ -105,7 +102,7 @@ header {
 
 #external-links>a {
     padding: 0 2rem;
-    color: #212529;
+    color: var(--light-theme-text);
 }
 
 /* -------------------- About Me page -------------------- */
@@ -150,7 +147,7 @@ header {
 #contact-button {
     background-color: var(--accent-color);
     padding: .5rem 1.5em;
-    color: #FBFBFB;
+    color: var(--dark-theme-text);
     text-decoration: none;
 }
 
@@ -187,8 +184,15 @@ header {
 }
 
 .github {
-    color: #212529;
     font-size: 1.5rem;
+}
+
+.github.dark {
+    color: var(--dark-theme-text)
+}
+
+.github.light{
+    color: var(--light-theme-text)
 }
 
 .project-img {
@@ -212,7 +216,7 @@ header {
 .project-button a,
 #resume-button a {
     text-decoration: none;
-    color: #FBFBFB;
+    color: var(--dark-theme-text);
 }
 
 /* -------------------- Resume page -------------------- */
@@ -238,13 +242,13 @@ header {
 
 /* changing the label text colour depending on theme */
 .form-item.dark .ant-form-item-required {
-    color: #FBFBFB;
+    color: var(--dark-theme-text);
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
 }
 
 .form-item.light .ant-form-item-required {
-    color: #212529;
+    color: var(--light-theme-text);
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
 }
@@ -321,7 +325,7 @@ textarea:focus {
     }
 
     #avatar {
-        max-width: 55%;
+        max-width: 45%;
     }
 
     #avatar2 {
