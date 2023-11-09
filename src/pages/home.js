@@ -52,7 +52,7 @@ function Home() {
                     </a>
                     </div>
                     <div id='dark-theme-toggle'>
-                    <Switch checkedChildren="LIGHT ☀️" unCheckedChildren="DARK 🌙" defaultChecked onChange={toggleTheme} />
+                    <Switch checkedChildren="☀️" unCheckedChildren="🌙" defaultChecked onChange={toggleTheme} />
                     </div>
                 </div>
                 </header>

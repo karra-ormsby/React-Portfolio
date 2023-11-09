@@ -19,7 +19,7 @@ function Project (props) {
                                 </a>
                             </div>
                             <p>{item.description}</p>
-                            <button className='project-button' ><a href={item.url}>Visit site</a></button>
+                            <button className='project-button button' ><a href={item.url}>Visit site</a></button>
                         </div>
                     </li>
                 ))}

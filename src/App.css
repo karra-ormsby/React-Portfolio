@@ -38,7 +38,7 @@
     padding: 0 2rem;
 }
 
-button {
+.button {
     background-color: var(--accent-color);
     border: none;
     width: 8rem;

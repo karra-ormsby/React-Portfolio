@@ -62,7 +62,7 @@ function Contact() {
                     </Form.Item>
 
                     <Form.Item>
-                        <button id="contact-btn" type="primary" onClick={sendEmail}>
+                        <button id="contact-btn" className='button' type="primary" onClick={sendEmail}>
                             Submit
                         </button>
                     </Form.Item>
