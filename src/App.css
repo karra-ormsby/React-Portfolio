@@ -51,7 +51,6 @@ button {
 header {
     z-index: 100;
     background-color: var(--accent-color);
-    font-size: 1.2rem;
 }
 
 #header-heading {
@@ -62,8 +61,11 @@ header {
 }
 
 #nav-links {
-    display: flex;
+    /* display: flex;
     justify-content: center;
+    justify-content: space-between;
+    padding: 0 1rem; */
+    text-align: center;
 }
 
 .other-header {
@@ -89,10 +91,10 @@ header {
     margin-right: 0.8rem;
 }
 
-#nav-links>a {
+.ant-col>a {
     text-decoration: none;
     color: #212529;
-    padding: 0 2rem;
+    font-size: 1.2rem;
 }
 
 #external-links {
@@ -290,6 +292,11 @@ textarea:focus {
 /* -------------------- Screens bigger than 960px -------------------- */
 
 @media screen and (min-width: 960px) {
+    /* -------------------- Header -------------------- */
+
+
+    /* -------------------- Portfolio -------------------- */
+    
     .project-list-item {
         display: flex;
     }
