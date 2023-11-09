@@ -13,7 +13,7 @@ const projects = [
         img: TuttorificDashboard,
         alt: 'Tuttorific-teacher homepage',
         name: 'Tuttorific Tutor',
-        url: 'https://tutoriffic-teacher-bc391b7a081b.herokuapp.com/',
+        url: 'https://tuttorific-d9fe24230c7c.herokuapp.com/',
         repo: 'https://github.com/emjkenz/Tutoriffic-Teacher',
         description: 'Tutoriffic is a MERN-based online teaching platform for educators. It allows teachers to create lessons, quizzes, and view due dates using an integrated calendar. Learning modules simplify content organisation, and a collaborative blog enables peer interaction and Q&A. This application uses ant-design for styling and GraphQL for the database.'
     },
