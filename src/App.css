@@ -49,8 +49,6 @@ button {
 /* -------------------- Header -------------------- */
 
 header {
-    width: 100vw;
-    height: auto;
     z-index: 100;
     background-color: var(--accent-color);
     font-size: 1.2rem;
@@ -85,6 +83,10 @@ header {
 
 #dark-theme-toggle {
     justify-content: flex-end;
+}
+
+.ant-switch {
+    margin-right: 0.8rem;
 }
 
 #nav-links>a {
