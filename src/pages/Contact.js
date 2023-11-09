@@ -9,7 +9,6 @@ function Contact() {
     const [form] = Form.useForm();
 
     const sendEmail = () => {
-
         // use this to get the form values. This is needed as Ant Design handle form validation and submission differently.
         form.validateFields().then((values) => {
             console.log('Form values:', values);

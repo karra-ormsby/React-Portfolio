@@ -7,7 +7,7 @@ export const useTheme = () => useContext(ThemeContext);
 // Accepts an argument of "props", here we plucking off the "children" object.
 export default function ThemeProvider({ children }) {
   // Creating our state
-  const [darkTheme, setDarkTheme] = useState(true);
+  const [darkTheme, setDarkTheme] = useState(false);
 
   // Method to update our state
   const toggleTheme = () => {

@@ -15,7 +15,7 @@ const projects = [
         name: 'Tuttorific Tutor',
         url: 'https://tutoriffic-teacher-bc391b7a081b.herokuapp.com/',
         repo: 'https://github.com/emjkenz/Tutoriffic-Teacher',
-        description: 'A planner app that displays time block for an average work day (9am to 5pm) with the colour of the time block changing depending on whether the time has passed. The planner uses local storage to store the users data. '
+        description: 'Tutoriffic is a MERN-based online teaching platform for educators. It allows teachers to create lessons, quizzes, and view due dates using an integrated calendar. Learning modules simplify content organisation, and a collaborative blog enables peer interaction and Q&A. This application uses ant-design for styling and GraphQL for the database.'
     },
     {
         id: 2,
@@ -24,23 +24,23 @@ const projects = [
         name: 'Trail Blaze ',
         url: 'https://troy-earle.github.io/Trail-Blaze/',
         repo: 'https://github.com/emjkenz/Tutoriffic-Teacher',
-        description:'A virtual classroom application for a teacher or tutor. This is a MERN application that uses GraphQl'
+        description:'Trail Blaze is an app that locates hiking trails. It provides a 7-day weather forecast for an inputted location, displays a map with a fixed radius, and lists nearby hiking trails. If none are found, users are prompted to zoom out for a wider search. Users can click on trails for more details. This applicatoin uses Materialize CSS for design and integrate APIs for trail and weather info.'
     },
     {   
         id: 3,
         img: techBlog,
         alt: 'Tech Blog homepage',
         name: 'Tech Blog',
-        url: 'https://my-tech-blog-2023-38c9b7057a35.herokuapp.com/',
+        url: 'https://my-tech-blog-2023-238a1416fbe6.herokuapp.com/',
         repo: 'https://github.com/karra-ormsby/Tech-Blog',
-        description: 'A tech blog where developers can publish their blog posts and comment on other developers’ posts. This application uses Sequelize as the database.'
+        description: 'A tech blog where developers can publish their blog posts and comment on other developers posts. This application uses Sequelize as the database, and Handlebars.js to create reusable webpage templates.'
     },
     {
         id: 4,
         img: noteTaker,
         alt: 'Note Taker homepage',
         name: 'Note Taker',
-        url: 'https://my-note-taker-app-2023-c8fe22ce1727.herokuapp.com/',
+        url: 'https://my-note-taker-app-2023-b1187e79f9a4.herokuapp.com/',
         repo: 'https://github.com/karra-ormsby/Note-Taker',
         description: 'An application where the user can create and delete notes.'
     },
@@ -52,15 +52,6 @@ const projects = [
         url: 'https://karra-ormsby.github.io/Weather-Dashboard/',
         repo: 'https://github.com/karra-ormsby/Weather-Dashboard',
         description: 'A weather dashboard where users can look up weather in location and be shown current weather and a five day forcast. Uses openweathermap API for all weather and location data.'
-    },
-    {
-        id: 6,
-        img: codingQuiz,
-        alt: 'Coding Quiz homepage',
-        name: 'Coding Quiz',
-        url: 'https://karra-ormsby.github.io/Coding-Quiz/',
-        repo: 'https://github.com/karra-ormsby/Coding-Quiz',
-        description: 'A coding quiz that utilises local storage to store users score and save them to a Highscores page.'
     }
 ]
 

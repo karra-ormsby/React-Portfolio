@@ -9,15 +9,6 @@ function About() {
         <section id='about-section' >
             <div id='about'>
                 <div className='hero'>
-                    <div id='links'> 
-                        <a  className='github' href="https://github.com/karra-ormsby">
-                            <GithubOutlined className='icons'/>
-                        </a>
-                        <a href="https://au.linkedin.com/">
-                            <LinkedinOutlined className='icons' />
-                        </a>
-                    </div>
-
                     <div className='info'>
                         <div id='heading-div'>
                             <h1>Hi I'm Karra.<br></br> I'm a recently graduated <span className='accent'>Full Stack</span> Web Developer.  </h1>

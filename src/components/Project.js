@@ -12,7 +12,7 @@ function Project (props) {
                             <div className='title'>
                                 <h4>{item.name}</h4>
                                 <a className='github' href={item.repo}>
-                                    <GithubOutlined className='icons'/>
+                                    <GithubOutlined />
                                 </a>
                             </div>
                             <p>{item.description}</p>
@@ -25,5 +25,7 @@ function Project (props) {
         </section>
     );
 }
+
+
 
 export default Project;
