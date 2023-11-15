@@ -236,6 +236,7 @@ header {
 
 .technology-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .technology {
