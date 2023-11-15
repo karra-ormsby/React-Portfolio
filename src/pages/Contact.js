@@ -26,7 +26,7 @@ function Contact() {
 
     return (
         <section id="contact">
-            <h1>Contact Me</h1>
+            <h1 className={`section-heading${darkTheme ? 'dark' : 'light'}`}>Contact Me</h1>
             <div id="hero2">
                 <Form
                     form={form}

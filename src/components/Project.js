@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '../utils/ThemeContext';
 import { GithubOutlined } from '@ant-design/icons';
+import TechnologiesList from './Technologies';
 
 function Project (props) {
     const { darkTheme } = useTheme();
@@ -18,7 +19,8 @@ function Project (props) {
                                     <GithubOutlined />
                                 </a>
                             </div>
-                            <p>{item.description}</p>
+                            <p className='project-description'>{item.description}</p>
+                            <TechnologiesList technologies={item.technologies} />
                             <button className='project-button button' ><a href={item.url}>Visit site</a></button>
                         </div>
                     </li>
@@ -28,7 +30,5 @@ function Project (props) {
         </section>
     );
 }
-
-
 
 export default Project;

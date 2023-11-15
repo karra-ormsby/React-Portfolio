@@ -30,6 +30,20 @@
     font-weight: 700;
 }
 
+.section-headingdark {
+    text-align: center;
+    color: var(--dark-theme-text);
+    border-bottom: 1px solid var(--dark-theme-text);
+}
+
+.section-headinglight{
+    padding-bottom: 0.5rem;
+    text-align: center;
+    color: var(--light-theme-text);
+    border-bottom: 1px solid var(--light-theme-text);
+}
+
+
 #about,
 #contact,
 #resume,
@@ -44,6 +58,12 @@
     width: 8rem;
     height: 3rem;
     margin: 0 auto;
+    color: var(--dark-theme-text);
+}
+
+.project-button a,
+#resume-button a {
+    text-decoration: none;
     color: var(--dark-theme-text);
 }
 
@@ -162,11 +182,12 @@ header {
     display: inline-block;
 }
 
-.project-list-item p {
-    margin-top: 1rem;
+.project-list-item .project-description {
+    margin-top: 0.5rem;
 }
 
 .project-info {
+    width: 100%;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -213,10 +234,17 @@ header {
     box-shadow: none;
 }
 
-.project-button a,
-#resume-button a {
-    text-decoration: none;
+.technology-list {
+    display: flex;
+}
+
+.technology {
+    text-align: center;
     color: var(--dark-theme-text);
+    margin-right: 0.8rem;
+    padding: 0.2rem 0.6rem;
+    background-color: #5A7AAA;
+    border-radius: 5px;
 }
 
 /* -------------------- Resume page -------------------- */

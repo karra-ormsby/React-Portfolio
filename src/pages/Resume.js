@@ -1,9 +1,12 @@
 import React from 'react';
+import { useTheme } from '../utils/ThemeContext';
 
 function Resume() {
+    const { darkTheme } = useTheme(); 
+
     return (
         <section id='resume' >
-            <h1>Resume</h1>
+            <h1 className={`section-heading${darkTheme ? 'dark' : 'light'}`}>Resume</h1>
             <div id='skills'>
                 <div>
                     <h3 className='accent'> Hard Skills</h3>
