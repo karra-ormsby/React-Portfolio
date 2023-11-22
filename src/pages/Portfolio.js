@@ -11,8 +11,8 @@ const projects = [
       {
         id: 1,
         img: TuttorificDashboard,
-        alt: 'Tuttorific-teacher homepage',
-        name: 'Tuttorific Tutor',
+        alt: 'Tutoriffic Teacher homepage',
+        name: 'Tutoriffic Teacher',
         url: 'https://tuttorific-d9fe24230c7c.herokuapp.com/',
         repo: 'https://github.com/emjkenz/Tutoriffic-Teacher',
         description: 'Tutoriffic is a MERN-based online teaching platform for educators. It allows teachers to create lessons, quizzes, and view due dates using an integrated calendar. Learning modules simplify content organisation, and a collaborative blog enables peer interaction and Q&A. This project was developed as a group project.',
@@ -24,7 +24,7 @@ const projects = [
         alt: 'Trail Blaze homepage',
         name: 'Trail Blaze ',
         url: 'https://troy-earle.github.io/Trail-Blaze/',
-        repo: 'https://github.com/emjkenz/Tutoriffic-Teacher',
+        repo: 'https://github.com/troy-earle/Trail-Blaze',
         description:'Trail Blaze is an application that utilises third-party APIs to pinpoint hiking trails. It presents a map within a defined radius, showcasing nearby hiking trails, and offers a 7-day weather forecast for the specified location. In cases where no trails are detected, users are encouraged to zoom out for a broader search. Detailed information about trails is accessible through user clicks. This project was developed as a group project.',
         technologies: ['HTML', 'CSS', 'Materialize', 'JavaScript']
     },

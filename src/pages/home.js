@@ -47,7 +47,7 @@ function Home() {
                     <a href="https://github.com/karra-ormsby">
                         <GithubOutlined />
                     </a>
-                    <a href="www.linkedin.com/in/karra-ormsby">
+                    <a href="https://www.linkedin.com/in/karra-ormsby/">
                         <LinkedinOutlined />
                     </a>
                     </div>

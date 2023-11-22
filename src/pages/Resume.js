@@ -66,7 +66,7 @@ function Resume() {
                 </div>
             </div>
 
-            <button id='resume-button' className='button'><a href="https://drive.google.com/uc?id=1yBvMUN6PQZoIlpOWcOYpBTy1fHXVFXiJ&export=download" download>Download Resume</a></button>
+            <button id='resume-button' className='button'><a href="https://drive.google.com/uc?id=1ZVIv_SGxehFWmgGEiGIfugsoJgF4oAog&export=download" download>Download Resume</a></button>
 
 
         </section>
